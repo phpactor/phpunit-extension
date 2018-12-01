@@ -1,0 +1,37 @@
+{
+    "name": "phpactor/phpunit-extension",
+    "description": "Various integrations for PHPUnit",
+    "license": "MIT",
+    "type": "phpactor-extension",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+
+    "require": {
+        "phpactor/container": "^1.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.10.5",
+        "phpunit/phpunit": "^7.4",
+        "friendsofphp/php-cs-fixer": "^2.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\Extension\\PHPUnit\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\Extension\\PHPUnit\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "phpactor.extension_class": "Phpactor\\Extension\\PHPUnit\\PHPUnitExtension",
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
