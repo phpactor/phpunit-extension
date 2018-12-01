@@ -3,6 +3,7 @@
     "description": "Various integrations for PHPUnit",
     "license": "MIT",
     "type": "phpactor-extension",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Daniel Leech",
@@ -11,7 +12,9 @@
     ],
 
     "require": {
-        "phpactor/container": "^1.0"
+        "phpactor/container": "^1.0",
+        "phpactor/worse-reflection-extension": "^0.2.0",
+        "phpactor/test-utils": "^1.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.10.5",
