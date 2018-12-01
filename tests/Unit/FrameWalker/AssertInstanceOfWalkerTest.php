@@ -3,6 +3,7 @@
 namespace Phpactor\Extension\PHPUnit\Tests\Unit\FrameWalker;
 
 use Closure;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
 use Phpactor\Extension\PHPUnit\FrameWalker\AssertInstanceOfWalker;
 use Phpactor\TestUtils\ExtractOffset;

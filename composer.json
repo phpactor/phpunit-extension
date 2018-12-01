@@ -13,7 +13,7 @@
 
     "require": {
         "phpactor/container": "^1.0",
-        "phpactor/worse-reflection-extension": "^0.2.0",
+        "phpactor/worse-reflection-extension": "~0.1",
         "phpactor/test-utils": "^1.0"
     },
     "require-dev": {

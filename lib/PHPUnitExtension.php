@@ -3,6 +3,7 @@
 namespace Phpactor\Extension\PHPUnit;
 
 use Phpactor\Container\ContainerBuilder;
+use Phpactor\Container\Container;
 use Phpactor\Container\Extension;
 use Phpactor\Extension\PHPUnit\FrameWalker\AssertInstanceOfWalker;
 use Phpactor\Extension\WorseReflection\WorseReflectionExtension;
@@ -17,7 +18,7 @@ class PHPUnitExtension implements Extension
     {
         $container->register('phpunit.frame_walker.assert_instance_of', function (Container $container) {
             return new AssertInstanceOfWalker();
-        }, [ WorseReflectionExtension::TAG_FRAME_WALKER ]);
+        }, [ WorseReflectionExtension::TAG_FRAME_WALKER => [] ]);
     }
 
     /**
