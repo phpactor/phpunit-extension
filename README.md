@@ -3,7 +3,7 @@ PHPUnit Integration
 
 [![Build Status](https://travis-ci.org/phpactor/phpunit-extension.svg?branch=master)](https://travis-ci.org/phpactor/phpunit-extension)
 
-PHPUnit integration for PHPActor
+PHPUnit integration for [Phpactor](https://github.com/phpactor/phpactor)
 
 Features
 --------
