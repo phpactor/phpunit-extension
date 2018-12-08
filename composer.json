@@ -14,7 +14,8 @@
     "require": {
         "phpactor/container": "^1.0",
         "phpactor/worse-reflection-extension": "~0.1",
-        "phpactor/test-utils": "^1.0"
+        "phpactor/test-utils": "^1.0",
+        "phpactor/code-transform-extension": "^0.1.0@dev"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.10.5",

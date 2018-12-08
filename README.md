@@ -10,9 +10,46 @@ Features
 
 - [x] Type inference for `Assert::instanceOf(Foo::class, 'bar')` (for both
       member and static versions).
+- [x] Generate new test classes
+
+Configuration and Usage
+-----------------------
+
+### Test Navigation
+
+Phpactor allows you to jump to related files, just add the following
+[configuration](https://phpactor.github.io/phpactor/configuration.html) to
+jump from your standard source code to the test:
+
+```javascript
+{
+    "navigator.destinations": {
+        "source": "lib\/<kernel>Test.php"
+        "test": "tests\/Unit\/<kernel>Test.php"
+    },
+}
+```
+
+See [Jump to related
+file](https://phpactor.github.io/phpactor/navigation.html#jump-to-or-generate-related-file)
+for more information.
+
+### Test Auto Creation
+
+When jumping to a file which does not exist, Phpactor can offer to create a
+file for you. This plugin includes a simple `phpunit` class generator,
+configure (promted) auto-creation as follows:
+
+```javascript
+{
+    "navigator.autocreate": {
+        "source": "default",
+        "test": "phpunit"
+    }
+}
+```
 
 TODO
 ----
 
-- [ ] Templates for PHPUnit files.
 - [ ] RPC handlers to run PHPUnit, jump to failing tests?
