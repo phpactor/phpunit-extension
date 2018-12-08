@@ -12,6 +12,19 @@ Features
       member and static versions).
 - [x] Generate new test classes
 
+Installation
+------------
+
+Install Phpactor with the Phpactor binary:
+
+```php
+$ /path/to/phpactor extension:install phpactor/phpunit-extension
+```
+
+You can also install extensions from your editor. See
+[extensions](https://phpactor.github.io/phpactor/extensions.html) for more
+details.
+
 Configuration and Usage
 -----------------------
 
