@@ -2,7 +2,6 @@
 
 namespace Phpactor\Extension\PHPUnit\CodeTransform;
 
-use Phpactor\CodeTransform\Adapter\Native\GenerateNew\ClassGenerator;
 use Phpactor\CodeTransform\Domain\ClassName;
 use Phpactor\CodeTransform\Domain\GenerateNew;
 use Phpactor\CodeTransform\Domain\SourceCode;
