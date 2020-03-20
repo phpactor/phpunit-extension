@@ -70,7 +70,9 @@ class AssertInstanceOfWalker implements FrameWalker
     public function walk(FrameBuilder $builder, Frame $frame, Node $node): Frame
     {
         $callExpression = $node->parent;
-        assert($callExpression instanceof CallExpression);
+        if (!$callExpression instanceof CallExpression) {
+            return $frame;
+        }
         $expresionList = $callExpression->argumentExpressionList;
 
         if (!$expresionList instanceof ArgumentExpressionList) {
