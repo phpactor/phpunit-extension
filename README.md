@@ -1,7 +1,7 @@
 PHPUnit Integration
 ===================
 
-[![Build Status](https://travis-ci.org/phpactor/phpunit-extension.svg?branch=master)](https://travis-ci.org/phpactor/phpunit-extension)
+![CI](https://github.com/phpactor/phpunit-extension/workflows/CI/badge.svg)
 
 PHPUnit integration for [Phpactor](https://github.com/phpactor/phpactor)
 
