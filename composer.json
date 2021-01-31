@@ -11,11 +11,11 @@
         }
     ],
     "require": {
-        "php": "^7.3",
-        "phpactor/container": "^1.0",
-        "phpactor/worse-reflection-extension": "~0.1",
-        "phpactor/test-utils": "^1.0",
-        "phpactor/code-transform-extension": "^0.1|^0.2"
+        "php": "^7.3 || ^8.0",
+        "phpactor/container": "dev-maestro-php8",
+        "phpactor/worse-reflection-extension": "dev-maestro-php8",
+        "phpactor/test-utils": "dev-maestro-php8",
+        "phpactor/code-transform-extension": "dev-maestro-php8"
     },
     "require-dev": {
         "phpstan/phpstan": "~0.12.0",
