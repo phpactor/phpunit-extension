@@ -1,2 +1,6 @@
 parameters:
-    paths: [ lib ]
+    paths:
+        - lib
+    level: 7
+includes:
+    - phpstan-baseline.neon
