@@ -16,7 +16,7 @@ class PHPUnitExtension implements Extension
     /**
      * {@inheritDoc}
      */
-    public function load(ContainerBuilder $container)
+    public function load(ContainerBuilder $container): void
     {
         $this->registerWorseReflection($container);
         $this->registerCodeTransform($container);
@@ -25,7 +25,7 @@ class PHPUnitExtension implements Extension
     /**
      * {@inheritDoc}
      */
-    public function configure(Resolver $schema)
+    public function configure(Resolver $schema): void
     {
     }
 
